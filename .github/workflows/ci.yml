@@ -34,6 +34,7 @@ jobs:
         run: |
           mkdir _site
           echo "Hello from Shell" > _site/index.html 
+          echo "Today is "`date` >> _site/index.html
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
 
